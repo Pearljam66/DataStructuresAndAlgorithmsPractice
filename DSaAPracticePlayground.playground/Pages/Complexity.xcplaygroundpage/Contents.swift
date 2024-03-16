@@ -15,3 +15,14 @@ func sumFromOne(upto n: Int) -> Int {
 
 print(sumFromOne(upto: 10000))
 
+// Finds the sum of numbers from 1 to using the Standard Library
+// The time complexity of reduce is 0(n) which means linear time and "Fair".
+// It calls the + method n times.
+// It is the same as Big O, but has smaller constants because it is compiled code.
+func sumFromOneUsingStandardLibrary(upTo n: Int) -> Int {
+    // You don't need the return keyword since it's a single expression.
+    // Reduce returns the result of combining the elements of the sequence using the given closure.
+    (1...n).reduce(0, +)
+}
+
+print(sumFromOneUsingStandardLibrary(upTo: 10000))
