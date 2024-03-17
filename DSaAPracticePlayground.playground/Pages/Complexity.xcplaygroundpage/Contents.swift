@@ -14,7 +14,7 @@ func sumFromOne(upto n: Int) -> Int {
     return result
 }
 
-print(sumFromOne(upto: 10000))
+// print(sumFromOne(upto: 10000))
 
 // Finds the sum of numbers from 1 to using the Standard Library
 // The time complexity of reduce is 0(n) which means linear time and "Fair".
@@ -26,7 +26,7 @@ func sumFromOneUsingStandardLibrary(upTo n: Int) -> Int {
     (1...n).reduce(0, +)
 }
 
-print(sumFromOneUsingStandardLibrary(upTo: 10000))
+// print(sumFromOneUsingStandardLibrary(upTo: 10000))
 
 // Finds the sum of numbers using simple arithmetic.
 // O(1) it's time/space complexity is constant and excellent
@@ -35,7 +35,7 @@ func sumFromOneUsingSimpleArithmetic(upto n: Int) -> Int {
     (n + 1) * n / 2
 }
 
-print(sumFromOneUsingSimpleArithmetic(upto: 10000))
+// print(sumFromOneUsingSimpleArithmetic(upto: 10000))
 
 // MARK: Space Complexity
 
@@ -51,7 +51,7 @@ func printSorted(_ array: [Int]) {
     }
 }
 
-printSorted([34, 86, 23, 12, 93, 675])
+// printSorted([34, 86, 23, 12, 93, 675])
 
 // The overall goal is to iterate through the array multiple times, printing the next smallest value for each iteration.
 // Space complexity is O(1)
@@ -99,7 +99,7 @@ func printSortedImproved(_ array:[Int]) {
     }
 }
 
-printSortedImproved([34, 86, 23, 12, 93, 675])
+// printSortedImproved([34, 86, 23, 12, 93, 675])
 
 // Big Omega notation - used to measure the best-case runtime for an algorithm. This isn't as useful as Big 0 because getting the best case is often untenable.
 // Big Theta notation - use to measure the runtime for an algorithm that has the same best and worse case.
