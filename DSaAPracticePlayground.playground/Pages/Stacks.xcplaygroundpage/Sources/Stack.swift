@@ -2,6 +2,10 @@ public struct Stack<Element> {
     private var storage: [Element] = []
     public init() { }
 
+    public init(_ elements: [Element]) {
+        storage = elements
+    }
+
     public mutating func push (_ element: Element) {
         storage.append(element)
     }
@@ -11,6 +15,15 @@ public struct Stack<Element> {
     @discardableResult
     public mutating func pop() -> Element? {
         storage.popLast()
+    }
+
+    // Looks at the top element in the stack without mutating it's contents
+    public func peek() -> Element? {
+        storage.last
+    }
+
+    public var isEmpty: Bool {
+        peek() == nil
     }
 }
 
@@ -28,6 +41,8 @@ extension Stack: CustomDebugStringConvertible {
     }
 }
 
-public func peek() -> Element {
-
+extension Stack: ExpressibleByArrayLiteral {
+    public init(arrayLiteral elements: Element...) {
+        storage = elements
+    }
 }
