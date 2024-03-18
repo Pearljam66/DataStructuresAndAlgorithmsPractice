@@ -27,3 +27,7 @@ extension Stack: CustomDebugStringConvertible {
         """
     }
 }
+
+public func peek() -> Element {
+
+}

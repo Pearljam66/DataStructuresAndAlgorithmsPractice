@@ -3,6 +3,6 @@
     <pages>
         <page name='Complexity'/>
         <page name='SwiftStandardLibrary'/>
-        <page name='Stacks'/>
+        <page name='Stack'/>
     </pages>
 </playground>
